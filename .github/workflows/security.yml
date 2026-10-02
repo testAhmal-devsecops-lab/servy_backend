@@ -1,0 +1,14 @@
+name: Security SBOM Scan
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  run-security-scan:
+    uses: testAhmal-devsecops-lab/devsecops-orchestrator/.github/workflows/reusable-dtrack.yml@main
+    secrets: inherit # Transmet automatiquement le secret DTRACK_API_KEY de l'organisation
