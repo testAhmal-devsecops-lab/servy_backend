@@ -11,4 +11,4 @@ on:
 jobs:
   run-security-scan:
     uses: testAhmal-devsecops-lab/devsecops-orchestrator/.github/workflows/reusable-dtrack.yml@main
-    secrets: inherit # Transmet automatiquement le secret DTRACK_API_KEY de l'organisation
+    secrets: inherit # Transmet automatiquement le secret DTRACK_API_KEY de l'organisation 
